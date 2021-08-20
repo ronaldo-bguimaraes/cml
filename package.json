@@ -1,4 +1,9 @@
 {
+  "name": "@ronaldobg/cml",
+  "version": "1.0.4",
+  "main": "./dist",
+  "author": "Ronaldo Borges Guimarães",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^16.6.2",
     "ts-loader": "^9.2.5",

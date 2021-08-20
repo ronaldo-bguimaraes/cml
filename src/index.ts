@@ -6,7 +6,7 @@ import { analyze } from "./analyzer";
 
 import { generate } from "./generator";
 
-function cmlToString(string: string) {
+export function transpile(string: string) {
 
   const scanResult = scan(string);
 
@@ -17,15 +17,3 @@ function cmlToString(string: string) {
   return generate(analyzeResult);
 
 }
-
-const parser = new DOMParser();
-
-function cmlToHtml(string: string) {
-
-  const cmlResult = cmlToString(string);
-
-  return parser.parseFromString(cmlResult, "text/html");
-
-}
-
-export { cmlToString, cmlToHtml };
